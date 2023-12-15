@@ -1,0 +1,115 @@
+<!-- NAME: IAN NDOLO MWAU
+ REG NO: SCT211-0034/2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Official website for Kwame Mensah ">
+    <meta name="author" content="Kwame Mensah">
+    <link rel="stylesheet" href="overalstyle.css">
+    <script src="script.js"></script>
+    <title>Contact Kwame Mensah</title>
+</head>
+<body>
+    <header>
+        <h1> CONTACT KWAME</h1>
+        <nav>
+            <ul type="square">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="awards.html">Awards and Contributions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+   </header>  
+    <hr>
+    <article>
+        <form action="https://httpbin.org/get" method="get" id="contactForm">
+            <legend align="CENTER">Fill in the form Below</legend>
+            <fieldset>      
+                <p>
+                    <label for="firstName">First name: </label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="Jane"
+                      autocomplete="on"
+                      required
+                      autofocus
+                    />
+                  </p>
+                  <p>
+                    <label for="lastName">Last name: </label>
+                    <input
+                      type="text"
+                      name="lastName"
+                      id="lastName"
+                      placeholder="Mwangi"
+                      autocomplete="on"
+                      required/>
+                  </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="Phone">Phone number: </label>
+            <input
+              type="tel"
+              name="Phone"
+              id="Phone"
+              placeholder="5555555555"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+            />
+          </p>
+       <br>
+           <p>PLEASE CHOOSE YOUR GENDER:
+           <br>
+            <input type="radio" name="gender" id="ml" value="male">
+            <label for="ml">MALE</label>
+        
+            <input type="radio" name="gender" id="fl" value="female">
+            <label for="ml">FEMALE</label>
+    
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">OTHER</label>
+
+            </p>
+            <p>
+                <label for="continent">SELECT YOUR CONTINENT:</label>
+                <select name="continent" id="continent" >
+                    <option value="Africa" >AFRICA</option>
+                    <option value="europe">EUROPE </option>
+                    <option value="asia">ASIA</option>
+                    <option value="northamerica" selected>NORTH AMERICA</option>
+                </select>
+            </p>
+            <br>
+            <p>
+                <label for="message">I would like to hear from you: </label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </p>
+          
+           <button type="submit"> SUBMIT</button>
+            <button type="reset"> RESET</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                
+            </fieldset>
+        </form>
+        <div id="formResponse"></div>
+    </article>
+    
+    <footer>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+        <p>
+            &copy; 2023 Kwame Mensah. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
