@@ -1,3 +1,5 @@
+// NAME: IAN NDOLO MWAU
+// REG NO: SCT211-0034/2022
 document.addEventListener("DOMContentLoaded", ()=>{
     //query submit button and inout task field
     var submit= document.querySelector("#submit");
